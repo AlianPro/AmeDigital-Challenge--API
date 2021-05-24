@@ -3,10 +3,10 @@ package com.amedigital.amedigitalchallenge;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-//@SpringBootTest
+@SpringBootTest
 class AmedigitalChallengeApplicationTests {
 
-	//@Test
+	@Test
 	void contextLoads() {
 	}
 
