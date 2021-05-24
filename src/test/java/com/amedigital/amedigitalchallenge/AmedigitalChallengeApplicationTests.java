@@ -9,5 +9,4 @@ class AmedigitalChallengeApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }
