@@ -1,7 +1,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/AlianPro/AmeDigital-Challenge--API)
 ![GitHub language count](https://img.shields.io/github/languages/count/AlianPro/AmeDigital-Challenge--API)
 
-<details id="english">
+<details id="pt">
   <summary>PT/BR:brazil:</summary>
   
   # AmeDigital-Challenge--API
@@ -37,7 +37,8 @@ docker-compose up
 ./mvnw clean install
 ./mvnw spring-boot:run
 ```
-
+---  
+    
 ## :earth_americas:WINDOWS
 ## :whale:Run
 ```console
@@ -106,6 +107,7 @@ docker-compose up
 ./mvnw clean install
 ./mvnw spring-boot:run
 ```
+---
 
 ## :earth_americas:WINDOWS
 ## :whale:Run
