@@ -12,4 +12,5 @@ public class StarWarsApiPlanet {
      private String terrain;
      private String climate;
      private List<String> films;
-}
+
+     }

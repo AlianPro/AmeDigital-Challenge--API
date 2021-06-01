@@ -30,7 +30,7 @@ import java.util.List;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureTestDatabase
 @DirtiesContext(classMode = DirtiesContext.ClassMode.BEFORE_EACH_TEST_METHOD)
-public class PlanetControllertIT {
+public class PlanetControllerIT {
     @Autowired
     @Qualifier("testRestTemplate")
     private TestRestTemplate testRestTemplate;

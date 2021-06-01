@@ -6,7 +6,6 @@ import com.amedigital.amedigitalchallenge.exception.BadRequestException;
 import com.amedigital.amedigitalchallenge.repository.PlanetRepository;
 import com.amedigital.amedigitalchallenge.util.PlanetCreator;
 import com.amedigital.amedigitalchallenge.util.PlanetPostRequestBodyCreator;
-import com.amedigital.amedigitalchallenge.util.StarWarsApiPlanetCreator;
 import lombok.extern.log4j.Log4j2;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -19,7 +18,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
@@ -69,18 +67,14 @@ class PlanetServiceTest {
         Assertions.assertThat(planets.get(0).getName()).isEqualTo(expectedName);
     }
 
-//    @Test
-//    @DisplayName("listAll returns list of planetSwapi when successful")
-//    void listAll_ReturnsListOfPlanetsSwapi_WhenSuccessful(){
-//        String expectedName = StarWarsApiPlanetCreator.createValidStarWarsApiPlanet().getName();
-//        List<StarWarsApiPlanet> planets = planetService.listAllPlanetsOfSwapi();
-//        planets.add(StarWarsApiPlanetCreator.createValidStarWarsApiPlanet());
-//        Assertions.assertThat(planets)
-//                .isNotNull()
-//                .isNotEmpty()
-//                .hasSize(1);
-//        Assertions.assertThat(planets.get(0).getName()).isEqualTo(expectedName);
-//    }
+    @Test
+    @DisplayName("listAll returns list of planetSwapi when successful")
+    void listAll_ReturnsListOfPlanetsSwapi_WhenSuccessful(){
+        List<StarWarsApiPlanet> planets = planetService.listAllPlanetsOfSwapi();
+        Assertions.assertThat(planets)
+                .isNotNull()
+                .isNotEmpty();
+    }
 
     @Test
     @DisplayName("findByName returns list of planet when successful")
